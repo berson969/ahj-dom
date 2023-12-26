@@ -1,4 +1,4 @@
-name: Netology AHJ
+name: Homework Environment
 
 on: [push, pull_request]
 
@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-actions
       url: ${{ steps.deployment.outputs.page_url }}
 
     strategy:
