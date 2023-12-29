@@ -1,4 +1,4 @@
-name: Homework Environment
+name: Ahj-Homeworks
 
 on: [push, pull_request]
 
