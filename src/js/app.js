@@ -3,6 +3,6 @@ import GamePlay from "./GamePlay";
 const gamePlay = new GamePlay();
 
 gamePlay.goblinPosition();
-// setInterval(() => {
-//   gamePlay.goblinPosition()
-// }, 1000);
+setInterval(() => {
+  gamePlay.goblinPosition()
+}, 1000);

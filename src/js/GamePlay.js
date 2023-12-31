@@ -30,10 +30,6 @@ export default class GamePlay {
     goblinPosition() {
         const oldGoblinPosition = this.goblinPositionId;
 
-        if (oldGoblinPosition !== 0) {
-            const goblinPosition = document.getElementById(oldGoblinPosition);
-            goblinPosition.removeChild(this.goblin);
-        }
         do {
             this.goblinPositionId = Math.ceil(Math.random() * this.boardSize);
         } while (this.goblinPositionId === oldGoblinPosition);
