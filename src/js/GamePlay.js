@@ -1,6 +1,6 @@
 export default class GamePlay {
     constructor() {
-        this.boardSize = 3 ** 2;
+        this.boardSize = 5 ** 2;
         this.goblinPositionId = 0;
         this.board = document.getElementById("game-board");
         this.board.style.display = "grid";
@@ -8,8 +8,8 @@ export default class GamePlay {
             this.boardSize
         )}, 105px)`;
         this.goblin = document.createElement("img");
-        this.goblin.alt = "Goblin"
-        this.goblin.src = "img/goblin.png";
+        this.goblin.alt = "G"
+        this.goblin.src = "goblin.png";
         this.goblin.classList.add("goblin");
     }
 
