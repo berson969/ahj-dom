@@ -6,10 +6,12 @@ const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
   target: 'web',
+  entry: {
+      main: './src/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
-    assetModuleFilename: path.join('img', '[name].[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -35,8 +37,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
       },
     ],
   },
