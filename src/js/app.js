@@ -1,4 +1,4 @@
-import GamePlay from "./GamePlay";
+import GamePlay from "../../src/js//GamePlay";
 import { sortTable, stopSortTable } from "./sortTable";
 
 const mainElement = document.getElementById("app");

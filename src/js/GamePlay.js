@@ -1,3 +1,5 @@
+import GoblinImage from "../img/goblin.png";
+
 export default class GamePlay {
     constructor() {
         this.mainElement = document.getElementById("app");
@@ -31,7 +33,7 @@ export default class GamePlay {
     goblinPosition() {
         this.goblin = document.createElement("img");
         this.goblin.alt = "G";
-        this.goblin.src = "goblin.png";
+        this.goblin.src = GoblinImage;
         this.goblin.classList.add("goblin");
 
         const oldGoblinPosition = this.goblinPositionId;
