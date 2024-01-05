@@ -19,7 +19,7 @@ export default class GamePlay {
         for (let i = 1; i <= this.boardSize; i++) {
             const cell = document.createElement("cell");
             cell.classList.add("cell");
-            cell.id = `cell_${i}`;
+            cell.id = i;
             cell.textContent = i;
             this.board.appendChild(cell);
         }
@@ -45,7 +45,7 @@ export default class GamePlay {
         this.cleanBoard();
         this.renderBoard();
         const newGoblinPosition = document.getElementById(
-            `cell_${this.goblinPositionId}`
+            this.goblinPositionId
         );
         newGoblinPosition.textContent = "";
         newGoblinPosition.appendChild(this.goblin);
