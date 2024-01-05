@@ -63,7 +63,7 @@ function sortTable() {
         const tuple = tuplesArray[currentIndex];
 
         renderTable(tuple);
-    }, 20000);
+    }, 2000);
     return intervalId;
 }
 
