@@ -6,12 +6,11 @@ const gamePlayLinkElement = document.getElementById("gamePlayLink");
 const sortTableLinkElement = document.getElementById("sortTableLink");
 
 let intervalId;
-const gamePlay = new GamePlay();
+const gamePlay = new GamePlay(mainElement);
 
 function handleNavigation(event) {
     event.preventDefault();
     const targetId = event.target.id;
-    mainElement.innerHTML = "";
     switch (targetId) {
         case "gamePlayLink":
             stopSortTable(intervalId);

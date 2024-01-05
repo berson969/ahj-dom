@@ -1,8 +1,8 @@
 import GoblinImage from "../img/goblin.png";
 
 export default class GamePlay {
-    constructor() {
-        this.mainElement = document.getElementById("app");
+    constructor(element) {
+        this.mainElement = element;
         this.boardSize = 4 ** 2;
         this.goblinPositionId = 0;
         this.intervalId = null;
@@ -23,16 +23,18 @@ export default class GamePlay {
             cell.textContent = i;
             this.board.appendChild(cell);
         }
-        this.mainElement.appendChild(this.board);
+        this.mainElement.insertAdjacentElement("beforeend", this.board);
     }
 
     cleanBoard() {
-        this.mainElement.innerHTML = "";
+        Array.from(this.mainElement.children).forEach(element => {
+            element.remove();
+        });
     }
 
     goblinPosition() {
         this.goblin = document.createElement("img");
-        this.goblin.alt = "G";
+
         this.goblin.src = GoblinImage;
         this.goblin.classList.add("goblin");
 
