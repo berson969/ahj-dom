@@ -1,5 +1,5 @@
-import GamePlay from "../../src/js//GamePlay";
 import { sortTable, stopSortTable } from "./sortTable";
+import GamePlay from "./GamePlay";
 
 const mainElement = document.getElementById("app");
 const gamePlayLinkElement = document.getElementById("gamePlayLink");

@@ -29,8 +29,17 @@ li {
 main {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 100px;
 }
 
 a {
@@ -70,6 +79,19 @@ a:hover {
   object-fit: cover;
   object-position: center center;
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hammer-cursor {
+    width: 100px;
+    height: 100px;
+    background: url('../img/hammer.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
 }
 
 table {

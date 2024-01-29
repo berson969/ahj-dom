@@ -1,4 +1,4 @@
-import data from "./data";
+import data from "./data.js";
 
 function renderTable(sortTuple) {
     const mainElement = document.getElementById("app");
